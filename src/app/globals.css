@@ -1,67 +1,103 @@
 :root {
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-    /* Cores */
-      --white: #FFFFFF;
-      --black: #0C0D0F;
-      --red: #E03131;
-      --orange: #E8590C;
-      --yellow: #FCC419;
-      --green: #23DB42;
-      --teal: #89DD13;
-      --cyan: #3BC9DB;
-      --blue: #25BEFF;
-      --indigo: #4263Eb;
-      --purple: #7E5CEF;
-      --pink: #FE5895;
-      --gray100: #FAFAFA;
-      --gray200: #E9ECEF;
-      --gray300: #DEE2E6;
-      --gray400: #CED4DA;
-      --gray500: #A4ACB4;
-      --gray600: #64666B;
-      --gray700: #424449;
-      --gray800: #1D1E21;
-      --gray900: #141518;
-      --primary: #F83600;
-      --secondary: #FE8C00;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* Cores */
+  --white: #ffffff;
+  --black: #0c0d0f;
+  --red: #e03131;
+  --orange: #e8590c;
+  --yellow: #fcc419;
+  --green: #23db42;
+  --teal: #89dd13;
+  --cyan: #3bc9db;
+  --blue: #25beff;
+  --indigo: #4263eb;
+  --purple: #7e5cef;
+  --pink: #fe5895;
+  --gray100: #fafafa;
+  --gray200: #e9ecef;
+  --gray300: #dee2e6;
+  --gray400: #ced4da;
+  --gray500: #a4acb4;
+  --gray600: #64666b;
+  --gray700: #424449;
+  --gray800: #1d1e21;
+  --gray900: #141518;
+  --primary: #f83600;
+  --secondary: #fe8c00;
 
-      /* Fontes */
-      --font-heading: 'IBM Plex Sans', sans-serif;
-      --font-sans: 'Open Sans', Arial, Helvetica, sans-serif;
-      --font-mono: 'IBM Plex Mono', serif;
+  /* Fontes */
+  --font-heading: "IBM Plex Sans", sans-serif;
+  --font-sans: "Open Sans", Arial, Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", serif;
 
-      /* Tamanhos de Fonte */
-      --font-size-xs: 0.625rem;
-      /* 10px */
-      --font-size-sm: 0.75rem;
-      /* 12px */
-      --font-size-md: 0.875rem;
-      /* 14px */
-      --font-size-base: 1rem;
-      /* 16px */
-      --font-size-lg: 1.125rem;
-      /* 18px */
-      --font-size-xl: 1.25rem;
-      /* 20px */
-      --font-size-2xl: 1.5rem;
-      /* 24px */
-      --font-size-3xl: 2rem;
-      /* 32px */
-      --font-size-4xl: 2.5rem;
-      /* 40px */
-      --font-size-5xl: 4rem;
-      /* 64px */
+  /* Tamanhos de Fonte */
+  --font-size-xs: 0.625rem;
+  /* 10px */
+  --font-size-sm: 0.75rem;
+  /* 12px */
+  --font-size-md: 0.875rem;
+  /* 14px */
+  --font-size-base: 1rem;
+  /* 16px */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-2xl: 1.5rem;
+  /* 24px */
+  --font-size-3xl: 2rem;
+  /* 32px */
+  --font-size-4xl: 2.5rem;
+  /* 40px */
+  --font-size-5xl: 4rem;
+  /* 64px */
 }
-
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: transparent;
   color: white;
+}
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
 
-  min-height: 100%;
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray900);
+
+  -webkit-font-smoothing: antialiased;
+
+  color: var(--white);
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font: 400 1rem "Roboto", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
 }
